@@ -38,15 +38,15 @@ function HomePopUp() {
             </div>
             <div className="space-y-7">
               <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
-                ‘Spring Sale
+                Summer Sale
               </h2>
               <p className="text-muted-foreground font-bold text-center text-xs">
-                3/1/24 - 3/8/23
+                6/1/24 - 8/31/23
               </p>
-              <p className="text-lg font-medium capitalize lg:text-xl xl:text-2xl">
+              <p className="text-lg font-medium capitalize lg:text-xl xl:text-2xl text-center">
                 Tell the cashier{' '}
                 <span className="uppercase font-bold">‘I love ice cream’</span>{' '}
-                for 20% off your order’
+                for 20% off your order
               </p>
             </div>
           </section>
