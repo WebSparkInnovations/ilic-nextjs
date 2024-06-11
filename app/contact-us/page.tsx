@@ -14,21 +14,21 @@ const font = Roboto({
 
 function ContactUsPage() {
   return (
-    <div className="w-full h-[800px] lg:!h-screen relative bg-ellipse from-pink-300 to-rose-900 flex items-center justify-center">
+    <div className="w-full min-h-screen relative bg-ellipse from-pink-300 to-rose-900 flex items-center justify-center px-5">
       <article
         className={cn(
-          'flex flex-col gap-10 border-[3px] outline outline-[3px] outline-custom-red-300 outline-offset-4 border-custom-red-300 scale-75 h-[400px] w-[500px] lg:h-[600px] lg:w-[840px] xl:scale-100 leading-relaxed bg-ellipse from-custom-red-100 to-custom-red-400 p-5 lg:p-20 z-40 relative text-white mt-40',
+          'flex flex-col gap-10 border-[3px] outline outline-[3px] outline-custom-red-300 outline-offset-4 border-custom-red-300 leading-relaxed bg-ellipse from-custom-red-100 to-custom-red-400 p-5 lg:p-20 z-40 relative text-white mt-40 w-[650px] max-w-full',
           font.className
         )}
       >
-        <div className="space-y-4 text-xl lg:text-4xl 2xl:text-5xl">
+        <div className="space-y-4 text-xl lg:text-4xl 2xl:text-5xl ">
           <p>
             If you need more information or have questions, please contact us
             via phone or email.
           </p>
           <p>We’ll get back to you as soon as possible </p>
         </div>
-        <div className="flex items-start justify-between">
+        <div className="flex max-md:flex-col items-start justify-between gap-4">
           <div className="lg:w-full lg:text-xl lg:space-y-3 2xl:text-2xl">
             <p>
               Email:{' '}

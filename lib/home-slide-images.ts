@@ -1,30 +1,14 @@
 export const images = [
   {
-    src: 'https://mms.businesswire.com/media/20190305005668/en/708992/5/HT19_ICFA_PR_Launch_HTM2.jpg',
-    alt: 'ice cream man looking for customers',
+    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1248656037905432596/e776edf6-e791-44c5-8f1c-9bfe73826c67.png?ex=6669bb0e&is=6668698e&hm=ecb67e8ae0eacda93c735012a0514f2468b9bb6e6526ffa6904ca1ccce00c9f5&',
+    alt: 'ilic white, red, yellow drinks',
   },
   {
-    src: 'https://png.pngtree.com/background/20231117/original/pngtree-melted-ice-cream-art-collage-a-creative-depiction-of-food-and-picture-image_6300865.jpg',
-    alt: 'melted ice cream illustration',
+    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1249928739156918333/36512503_1023792077777959_1926782875139571712_n.png?ex=66691659&is=6667c4d9&hm=2635c373e3ec06bae5c02d2ee426d631f17cc8a58480d9b3c881e109bb2adfae&',
+    alt: 'vanilla rolled ice cream with choco syrup',
   },
   {
-    src: 'https://png.pngtree.com/background/20230410/original/pngtree-summer-melting-ice-cream-background-picture-image_2384286.jpg',
-    alt: 'Summer Melting Ice Cream',
-  },
-  {
-    src: 'https://png.pngtree.com/thumb_back/fw800/background/20230717/pngtree-planet-earth-s-melting-ice-cream-visualizing-the-impact-of-global-image_3891884.jpg',
-    alt: 'Planet Earth S Melting Ice Cream Visualizing The Impact Of Global Warming 3d Illustration',
-  },
-  {
-    src: 'https://png.pngtree.com/background/20230602/original/pngtree-a-serving-of-vanilla-ice-cream-and-hot-melted-chocolate-photo-picture-image_2858358.jpg',
-    alt: 'A Serving Of Vanilla Ice Cream And Hot Melted Chocolate Photo',
-  },
-  {
-    src: 'https://png.pngtree.com/background/20230618/original/pngtree-summer-vibes-flat-lay-concept-featuring-pink-melted-ice-cream-with-picture-image_3709077.jpg',
-    alt: 'Summer Vibes Flat Lay Concept Featuring Pink Melted Ice Cream With Cool Sunglasses In 3d Render Background',
-  },
-  {
-    src: 'https://png.pngtree.com/thumb_back/fw800/background/20220204/pngtree-puddle-of-melted-ice-cream-product-summer-gastronomy-photo-image_21283026.jpg',
-    alt: 'Puddle Of Melted Ice Cream Product Summer Gastronomy Photo',
+    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1249929081315786852/03f15b9b-e7b7-43cb-8824-e41059f9fdbe.png?ex=666916ab&is=6667c52b&hm=288d180c775f42badc2df1fb3f173a3dcd842fce85112d1efe56ae7da0fa96d7&',
+    alt: 'white rolled ice cream in tray',
   },
 ];
