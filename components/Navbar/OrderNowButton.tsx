@@ -7,7 +7,7 @@ import { GiIceCreamScoop } from 'react-icons/gi';
 const OrderNowButton = ({ onClick = () => {} }: { onClick?: () => void }) => (
   <a
     onClick={onClick}
-    href="https://order.online/store/i-love-ice-cream-east-york-24456577/?activationPreview=true&hideModal=true&pickup=true"
+    href="https://order.online/business/i-love-ice-cream-11388867"
     target="_blank"
     className={cn(
       buttonVariants({

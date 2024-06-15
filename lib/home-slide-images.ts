@@ -8,7 +8,11 @@ export const images = [
     alt: 'vanilla rolled ice cream with choco syrup',
   },
   {
-    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1249929081315786852/03f15b9b-e7b7-43cb-8824-e41059f9fdbe.png?ex=666916ab&is=6667c52b&hm=288d180c775f42badc2df1fb3f173a3dcd842fce85112d1efe56ae7da0fa96d7&',
-    alt: 'white rolled ice cream in tray',
+    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1250227597393006684/water_mark_removed_banner_img.jpeg?ex=666ec9ef&is=666d786f&hm=a316a127c43da2b010fc0109d6ff844ec2164393ca5313901de3f552d5d85ce2&',
+    alt: '4 ice cream row',
+  },
+  {
+    src: 'https://cdn.discordapp.com/attachments/775573349983715328/1250234628032303165/banner_image_2.jpeg?ex=666ed07b&is=666d7efb&hm=16dcec1012a6baa67b579efcbbf79296a8647453fe0885b06967f68e698d43ac&',
+    alt: '4 drinks row',
   },
 ];

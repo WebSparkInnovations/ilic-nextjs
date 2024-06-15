@@ -38,7 +38,7 @@ function ArticleWrapper({
         <h1 className="text-5xl font-medium drop-shadow-border text-white xl:text-6xl">
           {header}
         </h1>
-        <p className="text-sm sm:text-lg leading-tight lg:leading-relaxed lg:text-2xl drop-shadow-black-md text-white pr-5 text-left">
+        <p className="text-sm sm:text-lg leading-tight lg:leading-relaxed lg:text-3xl drop-shadow-black-md text-white pr-5 text-left">
           {description}
         </p>
       </section>
