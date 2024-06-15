@@ -59,7 +59,7 @@ function BannerSlideShow({
         })}
         href="/contact-us"
       >
-        Contact us
+        Contact Us
       </Link>
     </motion.div>
   );

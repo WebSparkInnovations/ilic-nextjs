@@ -31,11 +31,11 @@ function HomePageSlideShow() {
           className="text-center"
           textClassName={cn(
             myFont.className,
-            'sm:!text-5xl xl:!text-6xl 2xl:text-8xl drop-shadow-white-border !text-transparent !bg-clip-text !bg-gradient-to-t !from-black !to-ice-cream-100 !py-1 !pr-3'
+            'text-white sm:!text-5xl xl:!text-6xl 2xl:text-8xl drop-shadow-red-border  !py-1 !pr-3'
           )}
         />
         <Link
-          href="/our-story"
+          href="/best-sellers"
           className={cn(
             buttonVariants({
               variant: 'link',
