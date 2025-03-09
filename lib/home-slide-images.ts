@@ -5,10 +5,10 @@ export const images: Record<'src' | 'alt', string>[] = [
 	},
 	{
 		src: '/images/ice_cream_cups.webp',
-		alt: 'vanilla rolled ice cream with choco syrup'
+		alt: 'ice cream cups'
 	},
 	{
-		src: '/images/icecream_rulos.webp',
+		src: '/images/icecream_rolls.webp',
 		alt: 'ice cream rolls'
 	}
 ];
