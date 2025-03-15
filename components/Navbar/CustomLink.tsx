@@ -5,38 +5,26 @@ import Link from 'next/link';
 const myFont = localFont({ src: '../../public/fonts/Pally-Regular.ttf' });
 
 export const CustomLink = ({
-  href,
-  children,
-  blank,
-  className,
-  onClick,
+	href,
+	children,
+	blank,
+	className,
+	onClick
 }: {
-  href: string;
-  children: React.ReactNode;
-  blank?: boolean;
-  className?: string;
-  onClick?: () => void;
+	href: string;
+	children: React.ReactNode;
+	blank?: boolean;
+	className?: string;
+	onClick?: () => void;
 }) => {
-  if (blank) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        className={cn('navitems', myFont.className, className)}
-        onClick={onClick}
-      >
-        {children}
-      </a>
-    );
-  }
-
-  return (
-    <Link
-      href={href}
-      className={cn('navitems', myFont.className, className)}
-      onClick={onClick}
-    >
-      {children}
-    </Link>
-  );
+	return (
+		<Link
+			href={href}
+			className={cn('navitems', myFont.className, className)}
+			onClick={onClick}
+			target={blank ? '_blank' : undefined}
+		>
+			{children}
+		</Link>
+	);
 };
