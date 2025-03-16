@@ -1,4 +1,4 @@
-import ProductCardWrapper from '@/components/Product/ProductCardWrapper';
+import ProductCardWrapper from '@/app/best-sellers/components/ProductCardWrapper';
 import { SparklesCore } from '@/components/ui/sparkles';
 import { ALLPRODUCTS } from '@/lib/products';
 

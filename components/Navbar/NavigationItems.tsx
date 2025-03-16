@@ -26,7 +26,7 @@ export const NavigationItems = ({ onClick }: { onClick: () => void }) => (
     <CustomLink
       onClick={onClick}
       href="/ice-creams.pdf"
-      blank
+      target="_blank"
     >
       Menu
     </CustomLink>

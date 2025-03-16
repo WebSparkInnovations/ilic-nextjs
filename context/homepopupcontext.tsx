@@ -1,24 +1,25 @@
 'use client';
 
-import { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-export const HomePopUpContext = createContext({
-  domLoadedFirstTime: true,
-  toggleDomLoaded: () => {}
+interface HomePopUpContextProps {
+  popupOpened: boolean;
+  setpopupOpened: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const HomePopUpContext = createContext<HomePopUpContextProps>({
+  popupOpened: false,
+  setpopupOpened: () => {}
 });
 
 export function HomePopUpContextProvider({ children }: { children: React.ReactNode }) {
-  const [domLoadedFirstTime, setDomLoadedFirstTime] = useState<boolean>(true);
-
-  function toggleDomLoaded() {
-    setDomLoadedFirstTime(false);
-  }
+  const [popupOpened, setpopupOpened] = useState<boolean>(false);
 
   return (
     <HomePopUpContext.Provider
       value={{
-        domLoadedFirstTime,
-        toggleDomLoaded
+        popupOpened,
+        setpopupOpened
       }}
     >
       {children}

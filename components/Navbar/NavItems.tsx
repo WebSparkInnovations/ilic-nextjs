@@ -7,32 +7,34 @@ import OrderNowButton from './OrderNowButton';
 
 function NavItems() {
   return (
-    <div className={cn('hidden items-center lg:flex', pallyRegularFont.className)}>
-      <div className="flex flex-1 space-x-12 whitespace-nowrap">
-        <CustomLink href="/">Home</CustomLink>
-        <CustomLink href="/our-story">Our Story</CustomLink>
-      </div>
-      <Link
-        href="/"
-        className="relative h-36 w-36 flex-1 transition-transform hover:scale-110 md:h-40 md:w-40"
-      >
-        <Image
-          className="object-contain object-center drop-shadow-border"
-          fill
-          src="/images/ice-cream.webp"
-          alt="ice cream logo"
-        />
-      </Link>
-      <div className="mt-auto flex flex-1 flex-col items-center gap-y-1">
-        <div className="flex w-full justify-evenly space-x-20 whitespace-nowrap">
+    <div className="hidden flex-col items-stretch lg:flex">
+      <div className={cn('grid h-32 grid-cols-3 items-stretch justify-center', pallyRegularFont.className)}>
+        <div className="my-auto flex gap-x-20 whitespace-nowrap">
+          <CustomLink href="/">Home</CustomLink>
+          <CustomLink href="/our-story">Our Story</CustomLink>
+        </div>
+        <Link
+          href="/"
+          className="relative h-full w-full transition-transform hover:scale-110"
+        >
+          <Image
+            className="object-contain object-center drop-shadow-border"
+            src="/images/ice-cream.webp"
+            alt="ice cream logo"
+            fill
+          />
+        </Link>
+        <div className="my-auto flex w-full gap-x-20 whitespace-nowrap">
           <CustomLink href="/best-sellers">Best Sellers</CustomLink>
           <CustomLink
             href="/ice-creams.pdf"
-            blank
+            target="_blank"
           >
             Menu
           </CustomLink>
         </div>
+      </div>
+      <div className="-mt-6 place-self-end px-8">
         <OrderNowButton />
       </div>
     </div>

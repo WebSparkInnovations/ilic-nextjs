@@ -1,4 +1,4 @@
-import ProductCard from '@/components/Product/ProductCard';
+import ProductCard from '@/app/best-sellers/components/ProductCard';
 import { pacificoFont } from '@/lib/fonts';
 import { ALLPRODUCTS } from '@/lib/products';
 import { cn } from '@/lib/utils';

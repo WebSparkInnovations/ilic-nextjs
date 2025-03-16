@@ -1,6 +1,5 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
-import { HomePopUpContextProvider } from '@/context/homepopupcontext';
 import { interFont } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
@@ -22,13 +21,11 @@ export default function RootLayout({
       className="h-full scroll-smooth"
     >
       <body className={(cn('relative h-full font-sans antialiased'), interFont.className)}>
-        <HomePopUpContextProvider>
-          <main className="relative flex min-h-screen flex-col bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:10px_10px]">
-            <Navbar />
-            <div className="flex-1 flex-grow">{children}</div>
-            <Footer />
-          </main>
-        </HomePopUpContextProvider>
+        <main className="relative flex min-h-screen flex-col bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:10px_10px]">
+          <Navbar />
+          <div className="flex-1 flex-grow">{children}</div>
+          <Footer />
+        </main>
       </body>
     </html>
   );

@@ -17,14 +17,11 @@ function MobileNavItems() {
   }
 
   return (
-    <div className="z-50 flex h-max items-end px-5 lg:hidden">
-      <div
-        className="flex-1"
-        aria-hidden
-      />
+    <div className="z-50 flex h-32 items-center px-10 lg:hidden">
+      <div className="flex-1" />
       <Link
         href="/"
-        className="relative mx-auto h-32 w-32 transition-transform hover:scale-110"
+        className="relative mx-auto h-full w-32 transition-transform hover:scale-110"
       >
         <Image
           className="object-contain object-center drop-shadow-border"

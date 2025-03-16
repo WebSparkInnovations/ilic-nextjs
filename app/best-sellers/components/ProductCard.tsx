@@ -1,6 +1,6 @@
 import { ALLPRODUCTS } from '@/lib/products';
 import Image from 'next/image';
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from '../../../components/ui/card';
 
 type ProductCardProps = {
   product: (typeof ALLPRODUCTS)[number]['products'][number];
