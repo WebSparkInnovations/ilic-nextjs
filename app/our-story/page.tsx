@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Story',
-  description: 'Story Page Of Ice Cream Workshop',
+  description: 'Story Page Of Ice Cream Workshop'
 };
 
 function OurStoryPage() {

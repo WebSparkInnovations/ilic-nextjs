@@ -13,11 +13,11 @@ function InstagramGrid({ posts }: InstagramGridProps) {
       animate={{ rotateX: 0 }}
       transition={{
         type: 'spring',
-        damping: 6,
+        damping: 6
       }}
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-5 place-items-center"
+      className="grid grid-cols-1 place-items-center gap-x-8 gap-y-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
-      {posts.map(post => (
+      {posts.map((post) => (
         <>
           {post.media_type === 'IMAGE' && (
             <motion.a
@@ -29,14 +29,14 @@ function InstagramGrid({ posts }: InstagramGridProps) {
                 rotate: [8, -5],
                 transition: {
                   repeat: Infinity,
-                repeatType: 'reverse',
+                  repeatType: 'reverse',
                   type: 'spring',
                   damping: 5,
-                  mass: 1.1,
-                },
+                  mass: 1.1
+                }
               }}
               target="_blank"
-              className="relative w-56 h-56 lg:w-64 lg:h-64 flex bg-black rounded-md overflow-hidden"
+              className="relative flex h-56 w-56 overflow-hidden rounded-md bg-black lg:h-64 lg:w-64"
             >
               <Image
                 className="object-cover object-center"
@@ -49,7 +49,7 @@ function InstagramGrid({ posts }: InstagramGridProps) {
           {post.media_type === 'VIDEO' && (
             <motion.div
               key={post.id}
-              className="relative w-56 h-56 lg:w-64 lg:h-64 flex rounded-md overflow-hidden bg-black/20"
+              className="relative flex h-56 w-56 overflow-hidden rounded-md bg-black/20 lg:h-64 lg:w-64"
               style={{ rotate: 0 }}
               whileHover={{
                 opacity: 0.9,
@@ -59,8 +59,8 @@ function InstagramGrid({ posts }: InstagramGridProps) {
                   repeatType: 'reverse',
                   type: 'spring',
                   damping: 5,
-                  mass: 1.1,
-                },
+                  mass: 1.1
+                }
               }}
             >
               <a

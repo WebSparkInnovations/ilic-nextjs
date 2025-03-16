@@ -8,21 +8,21 @@ type ProductCardProps = {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <Card className="bg-white relative w-64 md:w-80 2xl:w-96 rounded-xl lg:h-[26rem] hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105">
-      <CardHeader className="text-xl font-bold text-neutral-600 lg:text-2xl xl:text-3xl select-none h-20">
+    <Card className="relative w-64 rounded-xl bg-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 md:w-80 lg:h-[26rem] 2xl:w-96">
+      <CardHeader className="h-20 select-none text-xl font-bold text-neutral-600 lg:text-2xl xl:text-3xl">
         {product.title}
       </CardHeader>
       <CardContent>
-        <div className="w-full mt-4">
+        <div className="mt-4 w-full">
           <Image
             src={product.img}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover object-center rounded-xl group-hover/card:shadow-xl user-drag-none"
+            className="user-drag-none h-60 w-full rounded-xl object-cover object-center group-hover/card:shadow-xl"
             alt={product.alt}
           />
         </div>
-        <CardFooter className="px-4 py-2 rounded-xl text-xs font-normal lg:text-sm xl:text-lg cursor-pointer">
+        <CardFooter className="cursor-pointer rounded-xl px-4 py-2 text-xs font-normal lg:text-sm xl:text-lg">
           Try now →
         </CardFooter>
       </CardContent>

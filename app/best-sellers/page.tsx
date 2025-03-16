@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Best Sellers',
-  description: 'Represents best products sold whole time',
+  description: 'Represents best products sold whole time'
 };
 
 function BestSellersPage() {
