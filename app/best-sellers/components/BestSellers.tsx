@@ -1,10 +1,10 @@
-import ProductCardWrapper from '@/components/Product/ProductCardWrapper';
+import ProductCardWrapper from '@/app/best-sellers/components/ProductCardWrapper';
 import { SparklesCore } from '@/components/ui/sparkles';
 import { ALLPRODUCTS } from '@/lib/products';
 
 function BestSellers() {
   return (
-    <div className="relative pt-64 h-full">
+    <div className="relative h-full pt-64">
       <SparklesCore
         background="#000000"
         minSize={0.8}

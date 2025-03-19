@@ -1,0 +1,46 @@
+{
+  "endOfLine": "lf",
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "printWidth": 120,
+  "proseWrap": "preserve",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "singleAttributePerLine": true,
+  "quoteProps": "as-needed",
+  "htmlWhitespaceSensitivity": "css",
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false,
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.tsx", ".ts"],
+      "options": {
+        "quotes": {
+          "type": "single",
+          "allowTemplateLiterals": true,
+          "avoidEscape": true
+        },
+        "padding-line-between-statements": [
+          {
+            "blankLine": "always",
+            "prev": "function",
+            "next": "*"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "if"
+          }
+        ]
+      }
+    }
+  ],
+  "tailwindFunctions": ["cn"],
+  "tailwindPreserveWhitespace": false,
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"]
+}

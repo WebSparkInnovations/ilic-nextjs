@@ -85,18 +85,14 @@
 
 @layer components {
   .footersection {
-    @apply flex-1 flex flex-col items-center h-full my-auto;
+    @apply my-auto flex h-full flex-1 flex-col items-center;
   }
+
   .footersection p {
     @apply text-lg xl:text-xl 2xl:text-2xl;
   }
+
   .footerheader {
-    @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-emerald-100 to-emerald-700;
-  }
-  .navitems {
-    @apply !text-xl md:!text-3xl lg:!text-4xl xl:!text-5xl !font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#111] to-ice-cream-100 pr-1 drop-shadow-white-border hover:scale-105 transition-transform py-1;
-  }
-  .mobilenavitems {
-    @apply !text-3xl text-center hover:scale-105 transition-transform;
+    @apply bg-gradient-to-t from-emerald-100 to-emerald-700 bg-clip-text text-xl font-bold text-transparent lg:text-2xl xl:text-3xl 2xl:text-4xl;
   }
 }

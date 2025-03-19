@@ -1,44 +1,44 @@
+import { pallyRegularFont } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import localFont from 'next/font/local';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CustomLink } from './CustomLink';
 import OrderNowButton from './OrderNowButton';
 
-const myFont = localFont({ src: '../../public/fonts/Pally-Regular.ttf' });
-
 function NavItems() {
-	return (
-		<div className={cn('hidden lg:flex items-center', myFont.className)}>
-			<div className="space-x-12 flex-1 whitespace-nowrap flex">
-				<CustomLink href="/">Home</CustomLink>
-				<CustomLink href="/our-story">Our Story</CustomLink>
-			</div>
-			<Link
-				href="/"
-				className="hover:scale-110 transition-transform relative h-36 w-36 md:h-40 md:w-40 flex-1"
-			>
-				<Image
-					className="object-contain object-center drop-shadow-border"
-					fill
-					src="/images/ice-cream.webp"
-					alt="ice cream logo"
-				/>
-			</Link>
-			<div className="flex-1 flex flex-col items-center mt-auto gap-y-1">
-				<div className="flex justify-evenly w-full space-x-20 whitespace-nowrap">
-					<CustomLink href="/best-sellers">Best Sellers</CustomLink>
-					<CustomLink
-						href="/ice-creams.pdf"
-						blank
-					>
-						Menu
-					</CustomLink>
-				</div>
-				<OrderNowButton />
-			</div>
-		</div>
-	);
+  return (
+    <div className="hidden flex-col items-stretch lg:flex">
+      <div className={cn('grid h-32 grid-cols-3 items-stretch justify-center', pallyRegularFont.className)}>
+        <div className="my-auto flex gap-x-20 whitespace-nowrap">
+          <CustomLink href="/">Home</CustomLink>
+          <CustomLink href="/our-story">Our Story</CustomLink>
+        </div>
+        <Link
+          href="/"
+          className="relative h-full w-full transition-transform hover:scale-110"
+        >
+          <Image
+            className="object-contain object-center drop-shadow-border"
+            src="/images/ice-cream.webp"
+            alt="ice cream logo"
+            fill
+          />
+        </Link>
+        <div className="my-auto flex w-full gap-x-20 whitespace-nowrap">
+          <CustomLink href="/best-sellers">Best Sellers</CustomLink>
+          <CustomLink
+            href="/ice-creams.pdf"
+            target="_blank"
+          >
+            Menu
+          </CustomLink>
+        </div>
+      </div>
+      <div className="-mt-6 place-self-end px-8">
+        <OrderNowButton />
+      </div>
+    </div>
+  );
 }
 
 export default NavItems;

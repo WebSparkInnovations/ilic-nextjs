@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
+import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 
@@ -9,34 +9,27 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          'bg-primary text-primary-foreground shadow hover:bg-primary/90',
-        destructive:
-          'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
-        outline:
-          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
-        secondary:
-          'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
+        default: 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
+        destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
+        outline: 'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+        secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
-        'ice-cream':
-          'bg-white text-ice-cream-600 shadow-md hover:bg-ice-cream-600/90 hover:text-white',
-        custom:
-          'bg-white text-custom-red-400 shadow-md hover:bg-custom-red-300 hover:text-white',
+        'ice-cream': 'bg-white text-ice-cream-600 shadow-md hover:bg-ice-cream-600/90 hover:text-white',
+        custom: 'bg-white text-custom-red-400 shadow-md hover:bg-custom-red-300 hover:text-white'
       },
       size: {
         default: 'h-9 px-4 py-2',
         sm: 'h-8 rounded-md px-3 text-xs',
         lg: 'h-10 rounded-md px-8',
-        custom:
-          'h-7 px-1 sm:h-12 rounded-full sm:px-4 text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl',
-        icon: 'h-9 w-9',
-      },
+        custom: 'h-7 px-1 sm:h-12 rounded-full sm:px-4 text-lg lg:text-xl',
+        icon: 'h-9 w-9'
+      }
     },
     defaultVariants: {
       variant: 'default',
-      size: 'default',
-    },
+      size: 'default'
+    }
   }
 );
 
