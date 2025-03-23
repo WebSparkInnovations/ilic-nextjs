@@ -1,10 +1,10 @@
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { dosisFont } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 type ArticleWrapperProps = {
-  image: string;
+  image: string | StaticImageData;
   header: string;
   description: string;
   alt: string;
