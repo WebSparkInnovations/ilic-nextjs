@@ -3,7 +3,7 @@
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { MotionValue, motion } from 'framer-motion';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -11,7 +11,7 @@ function BannerSlideShow({
   images,
   style
 }: {
-  images: { src: string; alt: string }[];
+  images: { src: StaticImageData; alt: string }[];
   style: { y: MotionValue<number>; scale: MotionValue<number> };
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,7 +35,7 @@ function BannerSlideShow({
       />
       {images.map((image, index) => (
         <Image
-          key={index}
+          key={image.alt}
           src={image.src}
           className={cn(
             'user-drag-none -translate-x-4 rotate-6 scale-125 object-cover object-center opacity-0 transition-all duration-500 ease-in-out',

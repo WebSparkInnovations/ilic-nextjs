@@ -1,14 +1,19 @@
-export const images: Record<'src' | 'alt', string>[] = [
+import drinks from '@/public/images/drinks.webp';
+import iceCreamCups from '@/public/images/ice_cream_cups.webp';
+import iceCreamRolls from '@/public/images/icecream_rolls.webp';
+import { StaticImageData } from 'next/image';
+
+export const images: { src: StaticImageData; alt: string }[] = [
   {
-    src: '/images/ice_cream_cups.webp',
+    src: iceCreamCups,
     alt: 'ice cream cups'
   },
   {
-    src: '/images/drinks.webp',
+    src: drinks,
     alt: 'milk shakes'
   },
   {
-    src: '/images/icecream_rolls.webp',
+    src: iceCreamRolls,
     alt: 'ice cream rolls'
   }
 ];

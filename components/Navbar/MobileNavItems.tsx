@@ -3,12 +3,12 @@
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { caveatFont } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
+import logo from '@/public/images/ice-cream.webp';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
 import { IoMenuOutline } from 'react-icons/io5';
 import { NavigationItems } from './NavigationItems';
-
 function MobileNavItems() {
   const sheetCloseRef = useRef<HTMLButtonElement>(null);
 
@@ -26,8 +26,8 @@ function MobileNavItems() {
         <Image
           className="object-contain object-center drop-shadow-border"
           fill
-          src="/images/ice-cream.webp"
-          alt="ice cream logo"
+          src={logo}
+          alt="I Love Ice Cream Logo"
         />
       </Link>
       <Sheet>
