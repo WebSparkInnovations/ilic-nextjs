@@ -1,5 +1,6 @@
 import { exoFont } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
+import logo from '@/public/images/ice-cream.webp';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,9 +14,9 @@ function Footer() {
     >
       <div className="relative my-auto h-20 flex-[0.4] grayscale xl:h-28 2xl:h-32">
         <Image
-          src="/images/ice-cream.webp"
-          alt="ice cream logo"
-          className="object-contain object-center"
+          src={logo}
+          alt="I Love Ice Cream Logo"
+          className="object-contain object-center transition-transform hover:scale-105"
           fill
         />
       </div>
@@ -33,7 +34,15 @@ function Footer() {
 
       <section className="footersection">
         <h2 className="footerheader">Contact Us</h2>
-        <p className="hover:underline">(717)-885-0551</p>
+        <p>
+          <Link
+            href="tel:+17178850551"
+            className="hover:underline"
+          >
+            (717)-885-0551
+          </Link>
+        </p>
+
         <p>
           <Link
             className="hover:underline"

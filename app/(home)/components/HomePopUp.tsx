@@ -2,6 +2,8 @@
 
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { useHomePopUpContext } from '@/context/homepopupcontext';
+import iceCream from '@/public/images/ice-cream.webp';
+import shakes from '@/public/images/shakes.webp';
 import Image from 'next/image';
 
 function HomePopUp() {
@@ -15,8 +17,8 @@ function HomePopUp() {
       <DialogContent className="!flex min-h-max max-w-sm items-center justify-between overflow-hidden !p-0 sm:max-w-lg md:max-w-xl xl:max-w-2xl 2xl:max-w-5xl">
         <div className="relative h-[400px] flex-1 transition-transform hover:scale-105 xl:h-[600px]">
           <Image
-            src="/images/shakes.webp"
-            alt="company shake picutres"
+            src={shakes}
+            alt="Milk Shakes"
             className="object-cover object-center"
             fill
           />
@@ -24,7 +26,7 @@ function HomePopUp() {
         <section className="flex h-[400px] flex-1 flex-col items-center justify-evenly px-4 xl:h-[600px]">
           <div className="relative h-2/6 w-full">
             <Image
-              src="/images/ice-cream.webp"
+              src={iceCream}
               alt="i love ice cream logo"
               className="object-contain object-center"
               fill
